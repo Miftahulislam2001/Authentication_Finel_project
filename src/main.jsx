@@ -9,12 +9,17 @@ import {
 import Admin from './Components/Admin/Admin.jsx';
 import Register from './Components/Register/Register.jsx';
 import LogIn from './Components/LogIn/LogIn.jsx';
+import Home from './Components/Home/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Admin/>,
     children: [
+      {
+        path: "/",
+        element: <Home/>
+      },
       {
         path: "/register",
         element: <Register/>
